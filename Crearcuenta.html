@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Poppins.css">
+    <script src="https://kit.fontawesome.com/eeac22f345.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/Imagenes/darkrai.ico">
+</head>
+<body>
+    <nav id="Nav" class="navbar navbar-expand-lg border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Phanter Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Ir al inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="IniciarSesion.html">Cuenta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="carrop.php">Carrito</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Realiza una busqueda" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav> <!--Cierre barra de navegación-->
+    </header> <!--Cierre Header-->
+    <br>
+
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Imagenes/Productos/login/dos.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class=""><span style="background-color: #121314;">Registra una cuenta nueva si aún no lo haces :)</span></h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/Imagenes/img3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/Imagenes/img3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div><!--6-Columnas - Carrusel-->
+            <div class="col-sm-6">
+                <div class="card mb-3">
+                    <div class="card-header text-bg-dark">
+                        <div class="d-flex justify-content-around">
+                            <img src="./Imagenes/Logo.png" alt="Logo" width="77" height="59">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light">
+                    <label for=""><b>Ingresa tus datos para crear una nueva cuenta </b></label><br><br>
+                        <form action="Crearcuenta.php" method="post">
+
+                            <div class="mb-3">
+                                <label for="txtNombre" class=" form-label">Nombre</label>
+                                <input type="text" class="form-control w-75" name="txtNombre" id="txtNombre" aria-describedby="nameHelpId" placeholder="Ingrese su nombre">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="Tel" class="form-label">Ingresa tu numero telefonico</label>
+                              <input type="number" class="form-control w-75" name="Tel" id="Tel" aria-describedby="helpId" placeholder="Ej. 2212847943">
+                             </div>
+
+                            <div class="mb-3">
+                                <label for="txtContraseña" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control w-75" name="txtContraseña" id="txtContraseña" aria-describedby="helpId" placeholder="Ingrese una contraseña">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="txtCorreo" class="form-label">Correo electrónico:</label>
+                              <input type="email" class="form-control w-75" name="txtCorreo" id="txtCorreo" aria-describedby="emailHelpId" placeholder="Ingrese un correo electrónico">
+                          </div>
+                            
+                            <div class="mb-3 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-dark w-100" id="RegDatos">Registrar cuenta</button><br>
+
+                            </div>
+                        </form><!--Formulario-->
+                    </div><!--Cierre card-body-->
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center">
+                            <p>O crea una cuenta con</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <a class="btn btn-dark flex-grow-1 m-2" href="https://accounts.google.com/signin/v2/identifier?TL=AG7eRGCu6KEtordUSUaqusYJdMVdXmMMPpVcltiHKWNSnFdQ-ZjvpAMAxaP75wKv&cid=1&continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword%3Fhl%3Des&flowName=GlifWebSignIn&hl=es&ifkv=Af_xneHSwS_EN2rlQicQHhsYsWut5bI5V5CqB66EdXCso4PPSGA1KlPl8B0UfDzuKPFkMVgyvmljhw&kdi=CAM&rart=ANgoxcc7iVIZW1UnOPE8hKc-QKXZKOoPBWDUX7NXaljqE2WBpkLyT-j_G6L3PF1jtC2HBka-SGUcBlj_wm0936grlxeJQEc0EA&sarp=1&scc=1&service=accountsettings&flowEntry=ServiceLogin" Target="_blank" role="button"><i class="fa-brands fa-google lead m-2"></i>Google</a>
+                            <a class="btn btn-dark flex-grow-1 m-2" href="https://es-la.facebook.com/login/device-based/regular/login/" Target="_blank" role="button"><i class="fa-brands fa-facebook lead m-2"></i>Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--6 Columnas - Login-->
+        </div><!--Cierre row 1-->
+    </div><!--Cierre "container"-->
+
+    <br>
+    <footer class="pie-pagina">
+        <div class="grupo-1 text-center">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="./Imagenes/Logo.png" alt="Logo">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>Información sobre nosotros</h2>
+              <p>Somos una empresa 100% Mexicana dedicada a la venta de articulos deportivos, buscamos
+                la más alta calidad en los uniformes que elaboramos para garantizar el mayor rendimiento de tus deportistas </p>
+                <br><br>
+                <h2>Comentarios y sugerencias</h2>
+                <a class="" href="" Target="_blank" role="button" id="sugerencias"><i class="fa-regular fa-mailbox"></i></i> atencion@phanthershop.com.mx</a><br>
+
+          </div>
+          <div class="box">
+              <h2>Visíta nuestras redes sociales</h2>
+              <div class=" red-social">
+                <a class="" href="" Target="_blank" role="button"><i class="fa-brands fa-square-facebook"></i> Facebook</a><br>
+                <a class="" href="" Target="_blank" role="button"><i class="fa-brands fa-instagram"></i></i> Instagram</a><br>
+                <br>
+              <h2>Contáctanos por WhatsApp</h2>
+              <a class="" href="" Target="_blank" role="button"><i class="fa fa-whatsapp"></i></i> 2212847943</a><br>
+              
+          </div>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2023 <b>Panther Shop</b> - Todos los derechos reservados</small> 
+        </div>
+        <style>
+          .pie-pagina{
+             width: 100%;
+             background-color: #121314;
+             }
+             .pie-pagina .grupo-1{
+          width: 100%;
+          max-width: 120%;
+          margin:auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 50px;
+           padding: 30px 0px;
+           }
+    
+        .pie-pagina .grupo-1 .box figure{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           }
+             .pie-pagina .grupo-1 .box figure img {
+        width: 250px;
+        }
+        .pie-pagina .grupo-1 .box h2{
+            color: #fff;
+              margin-bottom: 25px;
+             font-size: 16px;
+        }
+        .pie-pagina .grupo-1 .box p{
+            color: #efefef;
+              margin-bottom: 10px;
+             
+        }
+        .pie-pagina .grupo-1 .red-social a{
+          display: inline-block;
+          text-decoration: none;
+          width: 45 px;
+          height: 45px;
+          line-height: 45px;
+          color: #fff;
+          margin-right: 10px;
+          text-align: center;
+          transition: all 300ms ease;
+        }
+        .pie-pagina .grupo-1 .red-social a:hover{
+          color: rgb(120, 91, 144);
+        }
+        .pie-pagina .grupo-2 {
+          background-color: rgb(12, 12, 12);
+          padding: 15px 10px;
+          text-align: center;
+          color: #fff;
+        }
+        #sugerencias{
+            text-decoration: none;
+            color: white;
+        }
+        </style>
+      </footer> <!--Cierre footer-->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script></body>
+</html>

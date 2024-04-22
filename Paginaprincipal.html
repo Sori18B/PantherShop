@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Poppins.css">
+    <link rel="icon" href="/Imagenes/darkrai.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <img src="/Imagenes/darkrai.ico" alt="Logo" width="60" height="44"></a>
+                <a class="navbar-brand" href="#">Phanter Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Phanter Shop</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="IniciarSesion.html">Cuenta</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Carrito.html">Carrito de compras</a>
+                </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Realiza una busqueda" aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+                </div>
+                </div>
+            </div>
+        </nav> <!--Cierre barra de navegación-->
+    </header> <!--Cierre Header-->
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <style>
+                .card-body{
+                    height: fit-content;
+                }
+            </style>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Contenido</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html" aria-current="page">Inicio</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Paginaprincipal.html" aria-current="page">Página principal</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="IniciarSesion.html">Cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="Productos.html">Productos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Playeras.html">- Playeras </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Shorts.html">- Shorts </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Calcetas.html">- Calcetas </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Tennis.html">- Tennis </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Espinilleras.html">- Espinilleras </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Balones.html">- Balones </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Uniformes.html">- Uniformes </a>
+                            </li>
+                        </ul>
+                    </div> <!--Div card-body-->
+                </div><!--Div card-->
+            </div><!--2-Columnas-->
+
+            <div class="col-10">
+
+              <div  class="kodfun-galeri">
+                <div style="background-image: url('/Imagenes/galeriaPagP/messi.jpg'); "></div>
+                <div style="background-image: url('/Imagenes/galeriaPagP/mbape.jpg'); "></div>
+                <div style="background-image: url('/Imagenes/galeriaPagP/ney.jpg'); "></div>
+                <div style="background-image: url('/Imagenes/galeriaPagP/hakimi.jpg'); "></div>
+
+               
+            </div>  
+                <style>
+                    .kodfun-galeri{
+                        display:flex;
+                        height: 20rem;
+                        gap: 1re
+                    }
+                    .kodfun-galeri > div{
+                        flex: 1;
+                        border-radius: 1em;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: auto 100%;
+                        transition: all .8s cubic-bezier(.25, .4 , .45, 1.4);
+            
+                    }
+                    .kodfun-galeri > div:hover{
+                        flex: 5;
+                    }
+            
+                </style>
+              
+              <section class="w-50 mx-auto text-center pt-5" id="intro">
+                <h1 class="p-2 fs-3 border-top border-3 text-primary">PANTHER SHOP</h1>
+                <p class="p-2 fs-5" id="eslogan">Un equipamiento de campeones, solo en nuestra tienda deportiva</p>
+              </section>
+            
+            
+              <section class="container-fluid">
+                <div class="row w-75 mx-auto my-5 servicio-filla">
+                  <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                    <img src="/Imagenes/playera.png" alt="desarollo" width="180" height="160">
+                    <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Playeras de gran calidad</h3>
+                    <p class="px-4">Nuestras playeras son fabricadas de la mas alta calidad</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                  <img src="/Imagenes/garantia.png" alt="desarollo" width="180" height="160">
+                  <div>
+                  <h3 class="fs-5 mt-4 px-4 pb-1">Garantizamos la durabilidad de nuestros productos</h3>
+                  <p class="px-4">Todos muestros productos cuentan con minimo 2 años de garantia</p>
+                </div>
+              </div>
+              </div>
+              </section>
+
+            </div><!--col-10-->
+                
+        </div><!--Cierre row 1-->
+    </div> <!--Cierre "container"-->
+
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1 text-center">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="/Imagenes/Logo.png" alt="Logo">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>Información sobre nosotros</h2>
+              <p>Somos una empresa 100% Mexicana dedicada a la venta de articulos deportivos, buscamos
+                la más alta calidad en los uniformes que elaboramos para garantizar el mayor rendimiento de tus deportistas </p>
+                <br><br>
+                <h2>Comentarios y sugerencias</h2>
+                <a class="" href="" Target="_blank" role="button" id="sugerencias"><i class="fa-regular fa-mailbox"></i></i> atencion@phanthershop.com.mx</a><br>
+
+          </div>
+          <div class="box">
+              <h2>Visíta nuestras redes sociales</h2>
+              <div class=" red-social">
+                <a class="" href="" Target="_blank" role="button"><i class="fa-brands fa-square-facebook"></i> Facebook</a><br>
+                <a class="" href="" Target="_blank" role="button"><i class="fa-brands fa-instagram"></i></i> Instagram</a><br>
+                <br>
+              <h2>Contáctanos por WhatsApp</h2>
+              <a class="" href="" Target="_blank" role="button"><i class="fa fa-whatsapp"></i></i> 2212847943</a><br>
+              
+          </div>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2023 <b>Panther Shop</b> - Todos los derechos reservados</small> 
+        </div>
+        <style>
+          .pie-pagina{
+             width: 100%;
+             background-color: #121314;
+             }
+             .pie-pagina .grupo-1{
+          width: 100%;
+          max-width: 120%;
+          margin:auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 50px;
+           padding: 30px 0px;
+           }
+    
+        .pie-pagina .grupo-1 .box figure{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           }
+             .pie-pagina .grupo-1 .box figure img {
+        width: 250px;
+        }
+        .pie-pagina .grupo-1 .box h2{
+            color: #fff;
+              margin-bottom: 25px;
+             font-size: 16px;
+        }
+        .pie-pagina .grupo-1 .box p{
+            color: #efefef;
+              margin-bottom: 10px;
+             
+        }
+        .pie-pagina .grupo-1 .red-social a{
+          display: inline-block;
+          text-decoration: none;
+          width: 45 px;
+          height: 45px;
+          line-height: 45px;
+          color: #fff;
+          margin-right: 10px;
+          text-align: center;
+          transition: all 300ms ease;
+        }
+        .pie-pagina .grupo-1 .red-social a:hover{
+          color: rgb(120, 91, 144);
+        }
+        .pie-pagina .grupo-2 {
+          background-color: rgb(12, 12, 12);
+          padding: 15px 10px;
+          text-align: center;
+          color: #fff;
+        }
+        #sugerencias{
+            text-decoration: none;
+            color: white;
+        }
+        </style>
+      </footer> <!--Cierre footer-->
+
+<script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

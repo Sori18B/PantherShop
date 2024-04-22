@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcetas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Poppins.css">
+    <script src="https://kit.fontawesome.com/eeac22f345.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/Imagenes/darkrai.ico">
+</head>
+<body>
+    <nav id="Nav" class="navbar navbar-expand-lg border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Phanter Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="IniciarSesion.html">Cuenta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="carrop.php">Carrito</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Realiza una busqueda" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav> <!--Cierre barra de navegación-->
+    </header> <!--Cierre Header-->
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Contenido</h5>
+                    </div> <!--Fin card-header-->
+                    <div class="card-body">
+                        <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="Index.html" aria-current="page"><i class="fa-solid fa-house"></i> Inicio</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="IniciarSesion.html"><i class="fa-solid fa-user"></i> Inicia sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Crearcuenta.html"><i class="fa-solid fa-user-plus"></i> Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-shop"></i> Productos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Playeras.html"><i class="fa-solid fa-tag"></i> Playeras </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Shorts.html"><i class="fa-solid fa-tag"></i> Shorts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Calcetas.html"><i class="fa-solid fa-tag"></i> Calcetas </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tennis.html"><i class="fa-solid fa-tag"></i> Tennis </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Espinilleras.html"><i class="fa-solid fa-tag"></i> Espinilleras </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Balones.html"><i class="fa-solid fa-tag"></i> Balones </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Guantes.html"><i class="fa-solid fa-tag"></i> Guantes </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Uniformes.html"><i class="fa-solid fa-tag"></i> Uniformes </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Promociones.html"><i class="fa-solid fa-tag"></i>  Promociones </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="carrop.php"><i class="fa-solid fa-cart-shopping"></i> Carrito </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="base.html"><i class="fa-solid fa-tag"></i>  Consultas SQL </a>
+                      </li>
+                        </ul> <!--Fin de la lista-->
+                    </div> <!--Fin card-body-->
+                </div> <!--Fin card-->
+            </div> <!--Fin col-md-2-->
+            <div class="col-sm-10 col-md-10 col-lg-10">
+                <h2 class="text-center">GUANTES DE FÚTBOL</h2>
+                <br>
+                <div class="container"> <!--Contenedor de productos-->
+                    <div class="row">
+                    <!--Producto 1-->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="Imagenes/Productos/Guantes/img1.jpeg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body text-center">
+                                <h5>Guantes Rinat</h5>
+                                <p class="card-text text-center">Guantes para portero color dorado con negro</p>
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-primary btn-sm flex-grow-1 m-2" data-bs-toggle="modal" data-bs-target="#ModalP1">Ver más <br> detalles</button>
+                                    <form method="post" action="guantes1.php">
+                                      <button class="btn btn-success btn-sm flex-grow-1 m-2"  onclick=AgregarCarro1()>Agregar <br> al carrito</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade modal-dialog-scrollable modal-xl" id="ModalP1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Phanter Shop - Shorts</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+
+                                  <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7 text-center">
+                                                <p></p>
+                                                <img src="Imagenes/Productos/Guantes/img1.jpeg" class="card-img-top" alt="Producto 1">
+                                            </div>
+                                            <div class="col-sm-5">
+                                              <br>
+                                                <i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star-half-stroke" style="color: #4abd2e;"></i>
+                                                <br>
+                                                <h3>Guantes Rinat</h3>
+                                                <p>Guantes de portero Originales</p>
+                                                <h5>Precio:</h5>
+                                                <h5>$561.69</h5>
+                                                <br>
+                                                <h5>Selecciona una talla:</h5>
+                                                <div>
+                                                    <button type="button" class="btn btn-outline-primary">Chica</button> | <button type="button" class="btn btn-outline-primary">Mediana</button> | <button type="button" class="btn btn-outline-primary">Grande</button> | <button type="button" class="btn btn-outline-primary">Extra grande</button>
+                                                </div>
+                                                <br>
+                                                <h5>Cantidad:</h5>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Selecciona una cantidad</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                    <option value="3">6</option>
+                                                    <option value="3">7</option>
+                                                    <option value="3">8</option>
+                                                    <option value="3">9</option>
+                                                    <option value="3">10</option>
+                                                    <option value="3">11</option>
+                                                    <option value="3">12</option>
+                                                  </select>
+                                                  <br>
+                                                  <button type="button" class="btn btn-outline-success">Agregar compra al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <!--Navegación-->
+                                    <div class="card text-start">
+                                        <div class="card-body text-start">
+                                          <h5 class="card-title">Características</h5>
+                                          
+                                          <li class="list-group-item">Tejido de alta calidad que proporciona una sensación suave y cómoda en los pies.</li>
+                                          <li class="list-group-item">Diseño elástico y ajustado para un ajuste seguro y sin deslizamientos durante el juego.</li>
+                                          <li class="list-group-item">Zonas de ventilación estratégicamente ubicadas que ayudan a mantener los pies frescos y secos.</li>
+                                          <li class="list-group-item">Costuras planas que reducen la fricción y evitan la irritación en la piel.</li>
+                                          <br>
+                                          <h5>Agrega un comentario acerca del producto:</h5>
+                                          <br>
+                                          <div class="mb-3">
+                                            <label for="txtUsuario" class="form-label"><i class="fa-solid fa-user" style="color: #4a8af7;"></i> Ingresa tu nombre</label>
+                                            <input type="text" class="form-control" id="txtUsuario" placeholder="Ej. Eduardo Soriano">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="txtComentario" class="form-label"><i class="fa-solid fa-comment" style="color: #4a8af7;"></i> Escribe un comentario</label>
+                                            <textarea class="form-control" id="txtComentario" rows="3"></textarea>
+                                          </div>
+                                        </div>
+                                      </div><!--Fin navegación-->
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Guardar cambios y ver más productos</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Modal -->
+                    </div>
+                    <!--Fin Producto 1-->
+
+                     <!--Producto 2-->
+                     <div class="col-md-4">
+                        <div class="card">
+                            <img src="Imagenes/Productos/Guantes/img2.jpeg" class="card-img-top" alt="Producto 2">
+                            <div class="card-body text-center">
+                                <h5>Guantes Rinat </h5>
+                                <p class="card-text text-center">Guantes para portero color negro/amarillo</p>
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-primary btn-sm flex-grow-1 m-2" data-bs-toggle="modal" data-bs-target="#ModalP2">Ver más <br> detalles</button>
+                                    <form method="post" action="guantes2.php">
+                                      <button class="btn btn-success btn-sm flex-grow-1 m-2"  onclick=AgregarCarro1()>Agregar <br> al carrito</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade modal-dialog-scrollable modal-xl" id="ModalP2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Phanter Shop - Camisetas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+
+                                  <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7 text-center">
+                                                <p></p>
+                                                <img src="Imagenes/Productos/Guantes/img2.jpeg" class="card-img-top" alt="Producto 2">
+                                            </div>
+                                            <div class="col-sm-5">
+                                              <br>
+                                                <i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star-half-stroke" style="color: #4abd2e;"></i>
+                                                <h3>Guantes Rinat</h3>
+                                                <p>Guantes de portero Originales color negro con amarillo</p>
+                                                <p></p>
+                                                <h5>Precio:</h5>
+                                                <h5>$568.99</h5>
+                                                <br>
+                                                <h5>Selecciona una talla:</h5>
+                                                <div>
+                                                    <button type="button" class="btn btn-outline-primary">Chica</button> | <button type="button" class="btn btn-outline-primary">Mediana</button> | <button type="button" class="btn btn-outline-primary">Grande</button> | <button type="button" class="btn btn-outline-primary">Extra grande</button>
+                                                </div>
+                                                <br>
+                                                <h5>Cantidad:</h5>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Selecciona una cantidad</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                    <option value="3">6</option>
+                                                    <option value="3">7</option>
+                                                    <option value="3">8</option>
+                                                    <option value="3">9</option>
+                                                    <option value="3">10</option>
+                                                    <option value="3">11</option>
+                                                    <option value="3">12</option>
+                                                  </select>
+                                                  <br>
+                                                  <button type="button" class="btn btn-outline-success">Agregar compra al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <!--Navegación-->
+                                    <div class="card text-start">
+                                        <div class="card-body text-start">
+                                          <h5 class="card-title">Características</h5>
+                                         
+                                          <li class="list-group-item">Tecnología de compresión para soporte muscular y circulación sanguínea mejorada.</li>
+                                          <li class="list-group-item">Paneles de ventilación estratégicamente ubicados para mayor transpirabilidad.</li>
+                                          <li class="list-group-item">Zonas de ventilación estratégicamente ubicadas que ayudan a mantener los pies frescos y secos.</li>
+                                          <li class="list-group-item">Variedad de estilos, colores y longitudes disponible.</li>
+                                        
+                                          <br>
+                                          <h5>Agrega un comentario acerca del producto:</h5>
+                                          <br>
+                                          <div class="mb-3">
+                                            <label for="txtUsuario" class="form-label"><i class="fa-solid fa-user" style="color: #4a8af7;"></i> Ingresa tu nombre</label>
+                                            <input type="text" class="form-control" id="txtUsuario" placeholder="Ej. Eduardo Soriano">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="txtComentario" class="form-label"><i class="fa-solid fa-comment" style="color: #4a8af7;"></i> Escribe un comentario</label>
+                                            <textarea class="form-control" id="txtComentario" rows="3"></textarea>
+                                          </div>
+                                        </div>
+                                      </div><!--Fin navegación-->
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Guardar cambios y ver más productos</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Modal -->
+                    </div>
+                    <!--Fin Producto 2-->
+
+                     <!--Producto 3-->
+                     <div class="col-md-4">
+                        <div class="card">
+                            <img src="Imagenes/Productos/Guantes/img3.jpeg" class="card-img-top" alt="Producto 3">
+                            <div class="card-body text-center">
+                                <h5>Guantes Rinat</h5>
+                                <p class="card-text text-center">Guantes para portero color blanco <br> gris y amarrillo</p>
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-primary btn-sm flex-grow-1 m-2" data-bs-toggle="modal" data-bs-target="#ModalP3">Ver más <br> detalles</button>
+                                    <form method="post" action="guantes3.php">
+                                      <button class="btn btn-success btn-sm flex-grow-1 m-2"  onclick=AgregarCarro1()>Agregar <br> al carrito</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade modal-dialog-scrollable modal-xl" id="ModalP3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Phanter Shop - Camisetas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+
+                                  <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-7 text-center">
+                                                <p></p>
+                                                <img src="Imagenes/Productos/Guantes/img3.jpeg" class="card-img-top" alt="Producto 3">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star" style="color: #4abd2e;"></i><i class="fa-solid fa-star-half-stroke" style="color: #4abd2e;"></i>
+                                                <br>
+                                                <h3>Guantes Rinat</h3>
+                                                <p>Guantes de portero originales.</p>
+                                                <br>
+                                                <h5>Precio:</h5>
+                                                <h5>$435.99</h5>
+                                                <br>
+                                                <h5>Selecciona una talla:</h5>
+                                                <div>
+                                                    <button type="button" class="btn btn-outline-primary">Chica</button> | <button type="button" class="btn btn-outline-primary">Mediana</button> | <button type="button" class="btn btn-outline-primary">Grande</button> | <button type="button" class="btn btn-outline-primary">Extra grande</button>
+                                                </div>
+                                                <br>
+                                                <h5>Cantidad:</h5>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Selecciona una cantidad</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                    <option value="3">6</option>
+                                                    <option value="3">7</option>
+                                                    <option value="3">8</option>
+                                                    <option value="3">9</option>
+                                                    <option value="3">10</option>
+                                                    <option value="3">11</option>
+                                                    <option value="3">12</option>
+                                                  </select>
+                                                  <br>
+                                                  <button type="button" class="btn btn-outline-success">Agregar compra al carrito</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <!--Navegación-->
+                                    <div class="card text-start">
+                                        <div class="card-body text-start">
+                                          <h5 class="card-title">Características</h5>
+                                          <li class="list-group-item">Materiales duraderos y transpirables para comodidad y rendimiento.</li>
+                                          <li class="list-group-item">Opciones de diferentes longitudes</li>
+                                          <li class="list-group-item">Amortiguación adicional en zonas de impacto para protección y comodidad.</li>
+                                          <li class="list-group-item">Diseño moderno y llamativo con colores vibrantes y logo distintivo de la marca.</li>
+                                        
+                                          <br>
+                                          <h5>Agrega un comentario acerca del producto:</h5>
+                                          <br>
+                                          <div class="mb-3">
+                                            <label for="txtUsuario" class="form-label"><i class="fa-solid fa-user" style="color: #4a8af7;"></i> Ingresa tu nombre</label>
+                                            <input type="text" class="form-control" id="txtUsuario" placeholder="Ej. Eduardo Soriano">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="txtComentario" class="form-label"><i class="fa-solid fa-comment" style="color: #4a8af7;"></i> Escribe un comentario</label>
+                                            <textarea class="form-control" id="txtComentario" rows="3"></textarea>
+                                          </div>
+                                        </div>
+                                      </div><!--Fin navegación-->
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Guardar cambios y ver más productos</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Modal -->
+                    </div>
+                    <!--Fin Producto 3-->
+                    </div><!--Fin 1er row de productos-->
+                </div><!--Fin contenedor de productos-->
+                <br>
+                <div class="row"> <!--Row para el elemento de navegacion-->
+                    <nav aria-label="Page navigation"> <!--Navegacion-->
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                  </div>
+            </div> <!--Fin col-md-2-->
+        </div> <!--Fin row principal-->
+    </div> <!--Fin container-fluid principla-->
+
+    <br>
+
+    <div class="container-fluid">
+      <footer class="pie-pagina">
+        <div class="grupo-1 text-center">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="./Imagenes/Logo.png" alt="Logo">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>Información sobre nosotros</h2>
+              <p>Somos una empresa 100% Mexicana dedicada a la venta de articulos deportivos, buscamos
+                la más alta calidad en los uniformes que elaboramos para garantizar el mayor rendimiento de tus deportistas </p>
+                <br><br>
+                <h2>Comentarios y sugerencias</h2>
+                <a class="" href="" Target="_blank" role="button" id="sugerencias"><i class="fa-regular fa-mailbox"></i></i> atencion@phanthershop.com.mx</a><br>
+
+          </div>
+          <div class="box">
+              <h2>Visíta nuestras redes sociales</h2>
+              <div class=" red-social">
+                <a class="" href="" Target="_blank" role="button"><i class="fa-brands fa-square-facebook"></i> Facebook</a><br>
+                <a class="" href="" Target="_blank" role="button"><i class="fa-brands fa-instagram"></i></i> Instagram</a><br>
+                <br>
+              <h2>Contáctanos por WhatsApp</h2>
+              <a class="" href="" Target="_blank" role="button"><i class="fa fa-whatsapp"></i></i> 2212847943</a><br>
+              
+          </div>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2023 <b>Panther Shop</b> - Todos los derechos reservados</small> 
+        </div>
+        <style>
+          .pie-pagina{
+             width: 100%;
+             background-color: #121314;
+             }
+             .pie-pagina .grupo-1{
+          width: 100%;
+          max-width: 120%;
+          margin:auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 50px;
+           padding: 30px 0px;
+           }
+    
+        .pie-pagina .grupo-1 .box figure{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           }
+             .pie-pagina .grupo-1 .box figure img {
+        width: 250px;
+        }
+        .pie-pagina .grupo-1 .box h2{
+            color: #fff;
+              margin-bottom: 25px;
+             font-size: 16px;
+        }
+        .pie-pagina .grupo-1 .box p{
+            color: #efefef;
+              margin-bottom: 10px;
+             
+        }
+        .pie-pagina .grupo-1 .red-social a{
+          display: inline-block;
+          text-decoration: none;
+          width: 45 px;
+          height: 45px;
+          line-height: 45px;
+          color: #fff;
+          margin-right: 10px;
+          text-align: center;
+          transition: all 300ms ease;
+        }
+        .pie-pagina .grupo-1 .red-social a:hover{
+          color: rgb(120, 91, 144);
+        }
+        .pie-pagina .grupo-2 {
+          background-color: rgb(12, 12, 12);
+          padding: 15px 10px;
+          text-align: center;
+          color: #fff;
+        }
+        #sugerencias{
+            text-decoration: none;
+            color: white;
+        }
+        </style>
+      </footer> <!--Cierre footer-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

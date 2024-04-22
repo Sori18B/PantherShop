@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Cliente</title>
+</head>
+<body>
+    <h1>Modificar Cliente</h1>
+
+    <form action="actualizar_cliente.php" method="POST">
+        <input type="hidden" id="cliente_id" value="<?php echo $cliente_id; ?>">
+
+        <label for="Cliente">Id de cliente:</label>
+        <input type="number" id="cliente_id" placeholder="Introduce tu ID"><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" placeholder="Introduce un nuevo telefono"><br>
+
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="Contraseña" placeholder="Introduce una nueva contraseña"><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Introduce un nuevo correo"><br>
+        
+        <button class="btn btn-outline-info">Actualizar datos</button>
+    </form>
+</body>
+</html>
